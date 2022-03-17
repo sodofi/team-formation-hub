@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Assignment 4</title>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/lib/client/updater.js" defer></script>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap">
+    <link href='https://fonts.googleapis.com/css?family=Poppins:wght@300;400;600;900&display=swap' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Manrope' rel='stylesheet'>
+
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/checkbox.css">
+
+    <script type="module" src="js/createProfile.js"></script>
+
+  </head>
+  <body>
+
+    <header id="header">
+        <div class="widthContainer">
+          <a href="main.html"><h1>Team Formation Hub</h1></a>
+        </div>
+    </header>
+
+    <main id="main">
+        <div class="infoContainer">
+            <h1>Your Profile Information:</h1>
+
+            <section class="formContainer">
+                <form id="form">
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" id="cardTitle" required>
+                    <hr>
+                    <label for="major">Major:</label>
+                    <input type="text" name="major" id="cardTitle" required>
+                    <hr>
+                    <label for="bio">Bio:</label>
+                    <textarea name="description" id="bio"></textarea>
+                    <hr>
+                    <label for="contact">LinkedIn:</label>
+                    <input type="url" name="contact" id="cardTitle" required>
+                    <hr>
+                    <label for="pfp">Picture URL: (optional)</label>
+                    <input type="url" name="pfp" id="cardTitle">
+                    <hr>
+                    <div class="checkboxContainer">
+                        <h2>I'm looking to:</h2>
+                        <label class="checkmarkContainer"> 
+                          <input type="checkbox" name="join" id="join">
+                          <span class="checkmark"></span>
+                          Join a team
+                        </label>
+                        <label class="checkmarkContainer"> 
+                          <input type="checkbox" name="recruit" id="recruit">
+                          <span class="checkmark"></span>
+                          Recruit a new member
+                        </label>
+                    </div>
+                    <div class="saveButton">
+                      <button type="submit" id="addGroup" class="save">Save</button>
+                    </div>
+                </form>
+              </section>
+          </div>
+    </main>
+  </body>
+</html>

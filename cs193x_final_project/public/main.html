@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title></title>
+
+    <!-- These two lines provide automatic page and style reloading when files change -->
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/lib/client/updater.js" defer></script>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap">
+    <link href='https://fonts.googleapis.com/css?family=Poppins:wght@300;400;600;900&display=swap' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Manrope' rel='stylesheet'>
+
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/checkbox.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <script type="module" src="js/main.js"></script>
+
+  </head>
+
+  <body>
+    <header id="header">
+      <div class="widthContainer">
+        <a href="index.html"><h1>Team Formation Hub</h1></a>
+      </div>
+    </header>
+
+    <main id="main">
+      <!-- Group Information -->
+      <div class="widthContainer">
+        <div class="groupContainer">
+        </div>
+        <a href="profile.html"><button name="postInfo">Post Your Info</button></a>
+      </div>
+
+      <div class="widthContainer">
+        <hr id="line" size="4" width="100%" >  
+      </div>
+
+      <!-- Filters -->
+      <div class="widthContainer">
+        <span class="checkboxContainer">
+          <h2>Show me people who want to:</h2>
+          <label class="checkmarkContainer"> 
+            <input type="checkbox">
+            <span class="checkmark"></span>
+            Join a team
+          </label>
+          <label class="checkmarkContainer"> 
+            <input type="checkbox">
+            <span class="checkmark"></span>
+            Recruit a new member
+          </label>
+        </span>
+      </div>
+
+      <!-- Profile Cards -->
+      <div id="cardContainer">
+        <div class="template card">
+          <img class="pfp" src="images/default.png" alt="">
+          <span class="info">
+            <h1 class="name">Maria Jones Rodriguez Maria Jones Rodriguez</h1>
+            <h2 class="major">B.S. Computer Science</h2>
+            <label class="join">Looking to join a team</label>
+            <p class="bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+            <div>
+              <a href="profile.html" class="contact"><button name="connect">Connect</button></a>
+              <button class="secondary delete"><img src="icons/delete.svg" alt="Delete"></button>
+            </div>
+          </span>
+        </div>
+      </div>
+  
+    </main>
+  </body>
+</html>

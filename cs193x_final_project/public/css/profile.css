@@ -1,0 +1,74 @@
+/***** Main *****/
+#main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0.5rem 4rem;
+  }
+
+#main h1 {
+    font-size: x-large;
+    margin: 1em 0em;
+  }
+
+  #main span{
+      display: flex;
+  }
+
+  .infoContainer {
+      display: flex;
+      justify-content: space-between;
+  }
+  
+  .labeledInput {
+    display: flex;
+    align-items: center;
+    margin: 1em 0em;
+  }
+  
+  .labeledInput label {
+    width: 5em;
+    
+  }
+  
+  .container {
+    flex-grow: 1;
+    
+  }
+  
+  #setButton {
+    align-self: center;
+    
+  }
+
+  .editableText {
+    display: flex;
+    
+  }
+  
+  .editableText > :first-child {
+    flex-grow: 1;
+    margin-right: 0.5rem;
+    
+  }
+  
+  .editableText input {
+    min-width: 0;
+    background-color: #F8F6FB;
+    border-bottom: 3px solid #C8B1E9;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    outline: none;
+  }
+  
+  .editableText span {
+    border-bottom: 3px solid #C8B1E9;
+    padding: 0.25rem;
+  }
+  
+  .editableText button {
+    padding: 0.25rem;
+    border-radius: 0.5rem;
+  }
+  

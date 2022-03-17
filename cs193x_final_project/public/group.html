@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Assignment 4</title>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/lib/client/updater.js" defer></script>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap">
+    <link href='https://fonts.googleapis.com/css?family=Poppins:wght@300;400;600;900&display=swap' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Manrope' rel='stylesheet'>
+
+    <link rel="stylesheet" href="css/global.css">
+
+    <script type="module" src="js/createGroup.js"></script>
+
+  </head>
+  <body>
+
+    <header id="header">
+        <div class="widthContainer">
+          <a href="index.html"><h1>Team Formation Hub</h1></a>
+        </div>
+    </header>
+
+    <main id="main">
+        <div class="infoContainer">
+            <h1>Create a Group:</h1>
+            <section class="formContainer">
+                <form id="form">
+                    <label for="groupId">Id:</label>
+                    <input type="text" name="groupId" id="cardTitle" required>
+                    <hr>
+                    <label for="groupTitle">Title:</label>
+                    <input type="text" name="groupTitle" id="cardTitle" required>
+                    <hr>
+                    <label for="groupDescription">Description:</label>
+                    <textarea name="description" id="groupDescription"></textarea>
+                    <div class="saveButton">
+                      <button type="submit" id="addGroup" class="save">Save</button>
+                    </div>
+                </form>
+              </section>
+          </div>
+    </main>
+  </body>
+</html>

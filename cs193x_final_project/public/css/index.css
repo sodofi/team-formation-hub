@@ -1,0 +1,36 @@
+/***** Welcome *****/
+#welcome {
+    display: flex;
+    justify-content: center;
+}
+
+.groupLogin {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.groupButtons {
+    display: flex;
+}
+
+
+#searchForm {
+  display: flex;
+  
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+
+input {
+    width: 22em;
+  }
+
+.secondary {
+    margin: 1em 1em 0em 0em;
+}
+
+
+
+

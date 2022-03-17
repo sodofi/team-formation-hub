@@ -1,0 +1,129 @@
+/***** Global Styles *****/
+
+
+body {
+    margin: 0;
+    font-family: "Manrope", sans-serif;
+    background-color: #F8F6FB;
+  }
+
+
+h1 {
+    font-size: x-large;
+  }
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+  
+h2 {
+  font-size: medium;
+}
+
+p {
+  font-size: small;
+    
+}
+  
+label {
+  font-weight: bold;
+}
+
+
+button {
+  background-color: #7C6BF6;
+  border: 1px solid #7C6BF6;
+  border-radius: 0.4rem;
+  color: white;
+  cursor: pointer;
+  font-size: .85rem;
+  font-weight: bold;
+  padding: 0.5rem 1.5rem;
+}
+
+button:hover {
+  background-color: #6B57FF;
+}
+
+button.secondary {
+  background-color: white;
+  border: 2px solid #7C6BF6;
+  color: #7C6BF6;
+}
+
+button.secondary:hover {
+  background-color: #EBE8FF;
+}
+
+
+/***** Generic Containers *****/
+
+.widthContainer{
+  flex-grow: 1;
+  /* max-width: 1280px; */
+  margin: 1em 0em;
+}
+
+.infoContainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0.5rem 4rem;
+}
+
+/***** Header *****/
+
+#header {
+  display: flex;
+  height: 5em;
+  background-color: white;
+  border-bottom: 1px solid #ccd6dd;
+  padding: 0em 1.5em;
+}
+
+#header .widthContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#header h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+/***** Generic Forms *****/
+
+#form {
+  display: flex;
+  flex-direction: column;
+}
+
+#form .saveButton {
+  margin-top: 1em;
+  display: flex;
+  align-self: end;
+
+}
+
+input {
+  /* width: 22em; */
+  border: 2px solid #C8B1E9;
+  background-color: white;
+  border-radius:  0.4rem;
+  height: 2em;
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+}
+
+
+textarea {
+  border: 2px solid #C8B1E9;
+  background-color: white;
+  border-radius:  0.4rem;
+  height: 2em;
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+}
